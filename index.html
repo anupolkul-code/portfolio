@@ -139,10 +139,10 @@
             <h3>Languages & Frameworks</h3>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag primary" id="tag-python">Python</span>
-            <span class="skill-tag primary" id="tag-django">Django</span>
-            <span class="skill-tag primary" id="tag-fastapi">FastAPI</span>
-            <span class="skill-tag primary" id="tag-pygame">Pygame</span>
+            <span class="skill-tag" id="tag-python">Python</span>
+            <span class="skill-tag" id="tag-django">Django</span>
+            <span class="skill-tag" id="tag-fastapi">FastAPI</span>
+            <span class="skill-tag" id="tag-pygame">Pygame</span>
             <span class="skill-tag" id="tag-dart">Dart</span>
             <span class="skill-tag" id="tag-flutter">Flutter</span>
             <span class="skill-tag" id="tag-js">JavaScript</span>
@@ -245,6 +245,21 @@
                 <span class="tech-tag">Tailwind CSS</span>
                 <span class="tech-tag">Git/GitHub</span>
               </div>
+              <!-- Screenshots Gallery -->
+              <div class="project-screenshots" id="cutcamp-screenshots">
+                <p class="screenshots-label">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                  Preview
+                </p>
+                <div class="screenshots-grid">
+                  <div class="screenshot-item" id="screenshot-homepage">
+                    <img src="Homepage_Cutcamp.png" alt="CUTCAMP Homepage" loading="lazy" />
+                  </div>
+                  <div class="screenshot-item" id="screenshot-login">
+                    <img src="Login_Cutcamp.png" alt="CUTCAMP Login Page" loading="lazy" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -282,6 +297,18 @@
                 <span class="tech-tag">SQLite</span>
                 <span class="tech-tag">GitHub</span>
               </div>
+              <!-- Screenshots Gallery -->
+              <div class="project-screenshots" id="cookconnect-screenshots">
+                <p class="screenshots-label">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                  Preview
+                </p>
+                <div class="screenshots-grid screenshots-single">
+                  <div class="screenshot-item" id="screenshot-cookconnect-home">
+                    <img src="Cookconnect_homepage.png" alt="CookConnect – Homepage" loading="lazy" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -314,6 +341,21 @@
                 <span class="tech-tag">Pygame</span>
                 <span class="tech-tag">OOP</span>
                 <span class="tech-tag">GitHub</span>
+              </div>
+              <!-- Screenshots Gallery -->
+              <div class="project-screenshots" id="bullet-screenshots">
+                <p class="screenshots-label">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                  Preview
+                </p>
+                <div class="screenshots-grid">
+                  <div class="screenshot-item" id="screenshot-ingame1">
+                    <img src="Ingame1.png" alt="Plane of Bullet – Gameplay 1" loading="lazy" />
+                  </div>
+                  <div class="screenshot-item" id="screenshot-ingame2">
+                    <img src="Ingame2.png" alt="Plane of Bullet – Gameplay 2" loading="lazy" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -423,6 +465,17 @@
       <p class="footer-sub" id="footer-sub">Seeking internship opportunities in software engineering.</p>
     </div>
   </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-overlay" id="lightbox-overlay" onclick="closeLightbox()">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox" onclick="closeLightbox()">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img src="" alt="" id="lightbox-img" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

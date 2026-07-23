@@ -296,3 +296,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* ============================================================
+   Lightbox – Screenshot Viewer
+   ============================================================ */
+function openLightbox(src, caption) {
+  const overlay = document.getElementById('lightbox-overlay');
+  const img     = document.getElementById('lightbox-img');
+  const cap     = document.getElementById('lightbox-caption');
+  img.src = src;
+  img.alt = caption;
+  cap.textContent = caption;
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById('lightbox-overlay');
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
